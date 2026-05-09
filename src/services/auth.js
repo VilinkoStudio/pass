@@ -30,22 +30,22 @@ api.interceptors.response.use(
 
 export async function login(username, password) {
   try {
-    const response = await api.post('/api/login', {
+    const data = await api.post('/api/login', {
       username,
       password,
       responseType: 'login'
     })
     
-    if (response.data?.msg) {
-      throw new Error(response.data.msg)
+    if (data.msg) {
+      throw new Error(data.msg)
     }
     
-    if (response.data?.token) {
-      localStorage.setItem('token', response.data.token)
+    if (data.token) {
+      localStorage.setItem('token', data.token)
       localStorage.setItem('username', username)
     }
     
-    return response.data
+    return data
   } catch (error) {
     throw error
   }
