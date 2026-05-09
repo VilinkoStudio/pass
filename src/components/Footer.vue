@@ -11,8 +11,7 @@
 .page-footer {
   padding: 20px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.9);
   font-size: 13px;
-  background: rgba(0, 0, 0, 0.1);
 }
 </style>

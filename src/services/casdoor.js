@@ -1,8 +1,8 @@
 export const casdoorConfig = {
-  serverUrl: 'https://your-casdoor-domain.com',
-  clientId: 'your-client-id',
-  appName: 'YourApp',
-  organizationName: 'your-org',
+  serverUrl: 'https://pass.vilinko.com',
+  clientId: 'b497522dcdc36e131acc',
+  appName: 'Vilinko',
+  organizationName: 'built-in',
   redirectPath: '/callback',
   scope: 'read',
   state: 'casdoor'
